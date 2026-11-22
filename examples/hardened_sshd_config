@@ -1,0 +1,8 @@
+# Made-up example of a tighter config.
+Port 22
+PermitRootLogin no
+PasswordAuthentication no
+KbdInteractiveAuthentication no
+MaxAuthTries 3
+X11Forwarding no
+LogLevel VERBOSE

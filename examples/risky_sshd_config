@@ -1,0 +1,15 @@
+# Made-up example config with common mistakes.
+Include /etc/ssh/sshd_config.d/*.conf
+Port 22
+PermitRootLogin yes
+PasswordAuthentication yes
+MaxAuthTries 10
+X11Forwarding yes
+Ciphers +aes128-cbc,3des-cbc
+MACs hmac-sha2-256,hmac-md5
+
+# Added later to "turn passwords off" - but sshd keeps the first value.
+PasswordAuthentication no
+
+Match User backup
+    PermitEmptyPasswords yes

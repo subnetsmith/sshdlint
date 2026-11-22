@@ -1,0 +1,9 @@
+[package]
+name = "sshdlint"
+version = "0.1.0"
+edition = "2021"
+description = "Read an sshd_config and flag risky settings"
+license = "MIT"
+repository = "https://github.com/subnetsmith/sshdlint"
+
+[dependencies]
